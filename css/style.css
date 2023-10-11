@@ -12,9 +12,14 @@ body{
 }
 
 .myCard{
-    width: 7vw;
-    height: 7vw;
+    width: 8vw;
+    height: 8vw;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
     margin: 10px;
     background-color: red;
 }
