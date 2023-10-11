@@ -42,5 +42,4 @@ start.addEventListener('click', function () {
         container.append(div)
     }
 
-    container.append(completeString);
 });
