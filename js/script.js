@@ -1,5 +1,13 @@
 const start = document.getElementById('start');
 
+const hangingBorder = document.getElementById('hangingBorder');
+const ropeLeft = document.getElementById('left');
+const ropeRight = document.getElementById('right');
+
+const ropeResetter = document.getElementById('restart')
+
+
+
 start.addEventListener('click', function () {
     const container = document.getElementById('codeContainer');
     let print;
@@ -45,3 +53,40 @@ start.addEventListener('click', function () {
 
 
 });
+
+ropeRight.addEventListener('click', function () {
+    if (ropeLeft.style.display === "none") {
+        reset();
+        return;
+    }
+    console.log('right')
+    ropeRight.style.display = "none";
+    ropeResetter.style.display = "block";
+    hangingBorder.classList.add('rotateRight');
+});
+
+ropeLeft.addEventListener('click', function () {
+    if (ropeRight.style.display === "none") {
+        reset();
+        return;
+    }
+    console.log('left')
+
+    ropeLeft.style.display = "none";
+    ropeResetter.style.display = "block";
+    hangingBorder.classList.add('rotateLeft');
+});
+
+ropeResetter.addEventListener('click', function () {
+    if (hangingBorder.classList.contains('rotateRight') || hangingBorder.classList.contains('rotateLeft')) {
+        reset();
+    }
+});
+
+function reset() {
+    hangingBorder.classList.remove('rotateRight');
+    hangingBorder.classList.remove('rotateLeft');
+    ropeLeft.style.display = "block";
+    ropeRight.style.display = "block";
+    ropeResetter.style.display = "none";
+}

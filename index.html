@@ -14,12 +14,14 @@
 
 
 <body>
-    <div class="ropeContainer container d-flex flex-row justify-content-between">
-        <div class="rope"></div>
-        <div class="rope"></div>
+    <div id="ropeContainer" class=" container d-flex flex-row justify-content-between">
+        <div id="left" class="rope"></div>
+        <div id="restart" class="text-white p-5">reset</div>
+        <div id="right" class="rope"></div>
     </div>
-    <div id="hangingBorder" class="container">
-        <h1 id="start" class="text-white text-center fw-bolder py-3">FizzBuzzDOM (click me)</h1>
+
+    <div id="hangingBorder" class="container ">
+        <h1 id="start" class="text-white text-center fw-bolder py-5">FizzBuzzDOM (click me)</h1>
 
         <!-- filling with js -->
         <div id="codeContainer" class=" d-flex flex-row flex-wrap justify-content-center pt-0"></div>

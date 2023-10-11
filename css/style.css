@@ -9,6 +9,7 @@
 
 body{
     background-color: var(--bg-body);
+    overflow-x: hidden;
 }
 
 .myCard{
@@ -42,8 +43,9 @@ body{
     background-color: var(--bg-red);
 }
 
-.ropeContainer{
+#ropeContainer{
     height: 300px;
+    padding: 0;
     
 }
 
@@ -55,4 +57,42 @@ body{
 
 #hangingBorder{
     border: 1px solid white;
+     
+     
+}
+
+.rotateRight{
+    transform-origin: top left; 
+    animation: rotateClockwise 5s;
+    transform: rotate(90deg);
+}
+
+
+@keyframes rotateClockwise {
+    0%{ transform: rotate(0deg);}
+    25%{ transform: rotate(120deg);}
+    50%{ transform: rotate(73deg);}
+    75%{ transform: rotate(95deg);}
+    100%{ transform: rotate(90deg);}
+
+}
+
+
+.rotateLeft{
+    transform-origin: top right; 
+    animation: rotateAntiClockwise 5s;
+    transform: rotate(-90deg);
+}
+
+@keyframes rotateAntiClockwise {
+    0%{ transform: rotate(0deg);}
+    25%{ transform: rotate(-120deg);}
+    50%{ transform: rotate(-73deg);}
+    75%{ transform: rotate(-95deg);}
+    100%{ transform: rotate(-90deg);}
+
+}
+
+#restart{
+    display: none;
 }
