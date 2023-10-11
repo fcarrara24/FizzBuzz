@@ -2,6 +2,7 @@ const start = document.getElementById('start');
 
 start.addEventListener('click', function () {
     let print;
+
     for (let i = 1; i <= 100; i++) {
         print = ''
         if (i % 3 === 0) {

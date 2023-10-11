@@ -1,0 +1,36 @@
+:root{
+    --bg-body: #083b4c;
+    --bg-blue: #1389b2;
+    --bg-green: #0cd6a1;
+    --bg-yellow: #ffd166;
+    --bg-red: #f0466f;
+}
+
+
+body{
+    background-color: var(--bg-body);
+}
+
+.myCard{
+    width: 7vw;
+    height: 7vw;
+
+    margin: 10px;
+    background-color: red;
+}
+
+.green{
+    background-color: var(--bg-green);
+}
+
+.yellow{
+    background-color: var(--bg-yellow);
+}
+
+.blue{
+    background-color: var(--bg-blue);
+}
+
+.red{
+    background-color: var(--bg-red);
+}
