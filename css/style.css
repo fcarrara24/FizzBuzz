@@ -22,6 +22,8 @@ body{
     
     margin: 10px;
     background-color: red;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .green{
@@ -38,4 +40,19 @@ body{
 
 .red{
     background-color: var(--bg-red);
+}
+
+.ropeContainer{
+    height: 300px;
+    
+}
+
+.rope{
+    background-color: white;
+    height: 100%;
+    width: 10px;
+}
+
+#hangingBorder{
+    border: 1px solid white;
 }
