@@ -10,22 +10,17 @@ start.addEventListener('click', function () {
         for (let i = 1; i <= 100; i++) {
             //resetting addString & printstring
             div = '';
-            print = '';
             color = '';
-            if (i % 3 === 0) {
+            if (i % 15 === 0) {
+                color = 'red';
+                print = 'FrizzBuzz';
+            } else if (i % 3 === 0) {
                 color = 'green';
                 print = 'Fizz';
-            }
-
-            if (i % 5 === 0) {
-                //if it was divided also by 3 it concat the string
-                if (color === 'green') {
-                    color = 'red'
-                } else {
-                    color = 'yellow';
-                }
-                print = print + 'Buzz';
-            } else if (i % 3 !== 0) {
+            } else if (i % 5 === 0) {
+                color = 'yellow';
+                print = 'Buzz';
+            } else {
                 color = 'blue';
                 print = String(i);
             }
